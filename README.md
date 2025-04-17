@@ -27,6 +27,6 @@ The values and attributes can be changed in the json file heres an example:
   the weight for the attribute is easier to follow if all the values sum up to 100 since it will act as a percentage.
   it works with different values like ["short:1", "human-size:2", "tall:1"], in this case it will make 'human-size' 50% chance
   since it would be 2/4 chances. If there is a table of values in the attribute, the only possibilities will be that table. NOTE: You can have a type
-  of an attribute only be 1 creature if desired, the attributes in the table are not required to be the same as the original 'sizes' table as they are
+  of an attribute only be for 1 creature if desired, the attributes in the table are not required to be the same as the original 'sizes' table as they are
   intended for default settings. As such, 'gargoyle' could have ' "size": ["slender:1"] ' which would mean that it can only be slender in 'size' and it will be 
   the only race that has a custom 'size' attribute.
