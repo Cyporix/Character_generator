@@ -1,0 +1,190 @@
+{
+    "builds": [
+        "muscular", "weak", "strong", "fat", "thin"
+    ],
+
+
+    "sizes" : [
+        "tiny", "small", "short", "human-size", "tall", "big", "huge", "giant"
+    ],
+
+    "personalities" : [
+        "fearless", "clumsy", "lazy", "benevolent", "cunning", "brave",
+        "mischievous", "wise", "timid", "greedy", "noble", "sly",
+        "loyal", "curious", "stoic", "reckless", "gentle", "fierce"
+    ],
+
+    "ideologies" : [
+        "communist", "fascist", "environmentalist", "anarchist", "nationalist", "conservative", "liberal", "progressist",
+        "none", "socialist", "authoritarian", "democratic", "populist"
+    ],
+
+
+    "creatures" : [
+        { 
+            "race": "gargoyle",
+            "attributes": {
+                "personality" : [""],
+                "build" : [""],
+                "size": ["short:60", "human-size:35", "tall:5"],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "elf" ,
+            "attributes": {
+                "personality" : [""],
+                "build": ["thin:10", "weak:5"],
+                "size": ["tall:10","human-size:1"],
+                "ideology": ["environmentalist:1"]
+            }
+        },
+        { 
+            "race" : "dragon",
+            "attributes":{
+                "personality" : ["fierce:30", "fearless:15", "mischievous:10", "greedy:15", "noble:15", "wise:15"],
+                "build": ["strong:10", "fat:1"],
+                "size": ["big:30","huge:65","giant:5"],
+                "ideology": ["anarchist:80", "authoritarian:20"]
+            }
+        },
+        { 
+            "race" : "goblin",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "troll",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "dwarf",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "sprite",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "nymph",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "ogre",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "griffin",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "phoenix",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "werewolf",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "vampire",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "centaur",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "minotaur",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "mermaid",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "sphinx",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        },
+        { 
+            "race" : "orc",
+            "attributes":{
+                "personality" : [""],
+                "build": [""],
+                "size": [""],
+                "ideology": [""]
+            }
+        }
+
+    ]
+
+
+}
