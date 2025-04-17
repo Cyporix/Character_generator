@@ -23,7 +23,7 @@ The values and attributes can be changed in the json file heres an example:
             }
   }
 
-  removing 'personality' or build or any attributes is the same as "personality: [""]"
+  removing 'personality' or build or any attributes is the same as '"personality": [""]'
   the weight for the attribute is easier to follow if all the values sum up to 100 since it will act as a percentage.
   it works with different values like ["short:1", "human-size:2", "tall:1"], in this case it will make 'human-size' 50% chance
   since it would be 2/4 chances. If there is a table of values in the attribute, the only possibilities will be that table. NOTE: You can have a type
