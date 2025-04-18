@@ -15,9 +15,10 @@ def generate_character_wname(race_name="elf"):
     chosen_build = normalised_attribute_picker(attribute_build,"build", chosen_creature)
     chosen_size = normalised_attribute_picker(attribute_size,"size", chosen_creature)
     chosen_ideology = normalised_attribute_picker(attribute_ideologies, "ideology", chosen_creature)
+    chosen_ruling = normalised_attribute_picker(attribute_ruling, "ruling_type", chosen_creature)
     
     # Making the return value based of traits 
-    description = chosen_creature["race"] + ", " + chosen_personality + ", " + chosen_build + ", " + chosen_size + ", " + chosen_ideology
+    description = chosen_creature["race"] + ", " + chosen_personality + ", " + chosen_build + ", " + chosen_size + ", " + chosen_ideology + ", " + chosen_ruling
 
     # Debug prints
     print("Race: " + chosen_creature["race"])
@@ -26,6 +27,7 @@ def generate_character_wname(race_name="elf"):
     print("\t Build: " + chosen_build)
     print("\t Size: " + chosen_size)
     print("\t Ideology: " + chosen_ideology)
+    print("\t Ruling type: " + chosen_ruling)
     print("------------------------------------------")
     #
     
@@ -41,9 +43,10 @@ def generate_character():
     chosen_build = normalised_attribute_picker(attribute_build,"build", chosen_creature)
     chosen_size = normalised_attribute_picker(attribute_size,"size", chosen_creature)
     chosen_ideology = normalised_attribute_picker(attribute_ideologies, "ideology", chosen_creature)
+    chosen_ruling = normalised_attribute_picker(attribute_ruling, "ruling_type", chosen_creature)
     
     # Making the return value based of traits 
-    description = chosen_creature["race"] + ", " + chosen_personality + ", " + chosen_build + ", " + chosen_size + ", " + chosen_ideology
+    description = chosen_creature["race"] + ", " + chosen_personality + ", " + chosen_build + ", " + chosen_size + ", " + chosen_ideology + ", " + chosen_ruling
 
 
     # Debug prints
@@ -53,6 +56,7 @@ def generate_character():
     print("\t Build: " + chosen_build)
     print("\t Size: " + chosen_size)
     print("\t Ideology: " + chosen_ideology)
+    print("\t Ruling type: " + chosen_ruling)
     print("------------------------------------------")
     #
     
@@ -134,7 +138,13 @@ except:
 try:
     attribute_ideologies = data["ideologies"]
 except:
-    print("'Builds' got an error in formatting")
+    print("'ideologies' got an error in formatting")
+
+# reading 'ruling_types' from the json
+try:
+    attribute_ruling = data["ruling_types"]
+except:
+    print("'ruling_types' got an error in formatting")
 
 # reading 'creatures' from the json
 try:
