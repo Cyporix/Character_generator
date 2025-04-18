@@ -11,12 +11,17 @@
     "personalities" : [
         "fearless", "clumsy", "lazy", "benevolent", "cunning", "brave",
         "mischievous", "wise", "timid", "greedy", "noble", "sly",
-        "loyal", "curious", "stoic", "reckless", "gentle", "fierce"
+        "loyal", "curious", "stoic", "reckless", "gentle", "fierce",
+        "aggressive", "stupid", "hardworking"
     ],
 
     "ideologies" : [
         "communist", "fascist", "environmentalist", "anarchist", "nationalist", "conservative", "liberal", "progressist",
-        "none", "socialist", "authoritarian", "democratic", "populist"
+        "none", "socialist", "populist", "tribalistic"
+    ],
+
+    "ruling_types" : [
+        "authoritarian", "democratic", "monarchy", "gerontocratic", "theocratic", "none"
     ],
 
 
@@ -25,162 +30,190 @@
             "race": "gargoyle",
             "attributes": {
                 "personality" : [""],
-                "build" : [""],
+                "build" : ["muscular:45", "strong:35", "fat:20"],
                 "size": ["short:60", "human-size:35", "tall:5"],
-                "ideology": [""]
+                "ideology": ["none:100"],
+                "ruling_type": ["theocratic:50", "none:50"]
             }
         },
         { 
             "race" : "elf" ,
             "attributes": {
-                "personality" : [""],
+                "personality" : ["wise:30","noble:25", "stoic:10", "cunning:25", "curious:10"],
                 "build": ["thin:10", "weak:5"],
                 "size": ["tall:10","human-size:1"],
-                "ideology": ["environmentalist:1"]
+                "ideology": ["environmentalist:40", "nationalist:30", "tribalistic:30"],
+                "ruling_type": ["gerontocratic:50", "monarchy:50"]
             }
         },
         { 
             "race" : "dragon",
             "attributes":{
-                "personality" : ["fierce:30", "fearless:15", "mischievous:10", "greedy:15", "noble:15", "wise:15"],
+                "personality" : ["fierce:30", "fearless:15", "mischievous:5", "greedy:10", "noble:15", "wise:15", "cunning:10"],
                 "build": ["strong:10", "fat:1"],
                 "size": ["big:30","huge:65","giant:5"],
-                "ideology": ["anarchist:80", "authoritarian:20"]
+                "ideology": ["anarchist:80", "conservative:20"],
+                "ruling_type": ["authoritarian:55","gerontocratic:35", "none:10"]
             }
         },
         { 
             "race" : "goblin",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["greedy:20", "mischievous:30", "sly:20", "aggressive:20", "stupid:10"],
+                "build": ["thin:30", "weak:70"],
+                "size": ["small:30", "short:70"],
+                "ideology": ["anarchist:60", "conservative:10", "tribalistic:30"],
+                "ruling_type": ["authoritarian:50", "monarchy:30", "gerontocratic:20"]
             }
         },
         { 
             "race" : "troll",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["lazy:20", "aggressive:30", "stupid:50"],
+                "build": ["fat:40", "strong:60"],
+                "size": ["big:95", "huge:5"],
+                "ideology": ["none:60", "tribalistic:40"],
+                "ruling_type": ["monarchy:50", "none:20", "authoritarian:30"]
             }
         },
         { 
             "race" : "dwarf",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["loyal:30", "hardworking:35", "fierce:10", "brave:10", "stoic:15"],
+                "build": ["muscular:10", "fat:35", "strong:55"],
+                "size": ["short:85", "small:15"],
+                "ideology": ["conservative:25", "socialist:25", "communist:10", "nationalist:40"],
+                "ruling_type": ["monarchy:75", "gerontocratic:25"]
             }
         },
         { 
             "race" : "sprite",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["curious:40", "mischievous:25", "clumsy:5", "sly:20", "cunning:10"],
+                "build": ["weak:50", "thin:50"],
+                "size": ["tiny:100"],
+                "ideology": ["environmentalist:100"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "nymph",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["gentle:35", "curious:25", "benevolent:30","noble:10"],
+                "build": ["thin:90", "weak:10"],
+                "size": ["human-size:80", "short:20"],
+                "ideology": ["environmentalist:80", "none:20"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "ogre",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["fearless:20", "fierce:30", "reckless:20", "stoic:5", "aggressive:25"],
+                "build": ["fat:25", "strong:70", "muscular:5"],
+                "size": ["big:90", "huge:10"],
+                "ideology": ["none:30", "tribalistic:70"],
+                "ruling_type": ["authoritarian:30", "gerontocratic:50", "monarchy:20"]
             }
         },
         { 
             "race" : "griffin",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["noble:20", "wise:10", "cunning:30", "brave:15", "fearless:25"],
+                "build": ["muscular:60", "strong:40"],
+                "size": ["big:80", "huge:20"],
+                "ideology": ["none:100"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "phoenix",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["wise:25", "cunning:25", "stoic:25", "noble:25"],
+                "build": ["thin:75", "muscular:25"],
+                "size": ["small:5","short:10", "human-size:20", "tall:30","big:30", "huge:5"],
+                "ideology": ["none:100"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "werewolf",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["sly:25", "aggressive:20", "reckless:15", "fearless:20", "stoic:10", "fierce:10"],
+                "build": ["strong:30", "muscular:70"],
+                "size": ["human-size:20", "tall:80"],
+                "ideology": ["tribalistic:100"],
+                "ruling_type": ["pack-based:60", "gerontocratic:30", "authoritarian:10"]
             }
         },
         { 
             "race" : "vampire",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["sly:30", "cunning:10", "timid:5", "noble:30","loyal:20","greedy:5"],
+                "build": ["muscular:40", "thin:60"],
+                "size": ["human-size:80", "tall:20"],
+                "ideology": ["conservative:70", "nationalist:30"],
+                "ruling_type": ["monarchy:50", "authoritarian:10", "gerontocratic:40"]
             }
         },
         { 
             "race" : "centaur",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["loyal:50", "brave:20", "fearless:15", "hardworking:15"],
+                "build": ["muscular:75", "strong:25"],
+                "size": ["human-size:30","tall:65", "big:5"],
+                "ideology": ["tribalistic:100"],
+                "ruling_type": ["gerontocratic:70", "monarchy:15", "authoritarian:15"]
             }
         },
         { 
             "race" : "minotaur",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["aggressive:40", "fierce:20", "fearless:15", "reckless:10", "noble:5", "cunning:5", "wise:5"],
+                "build": ["muscular:60","strong:40"],
+                "size": ["big:60","huge:40"],
+                "ideology": ["none:100"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "mermaid",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["loyal:45", "curious:25", "wise:15", "cunning:5", "noble:10"],
+                "build": ["thin:60", "muscular:30", "weak:10"],
+                "size": ["human-size:80", "short:10", "tall:10"],
+                "ideology": ["environmentalist:60", "liberal:20", "tribalistic:20"],
+                "ruling_type": ["monarchy:70","gerontocratic:30"]
             }
         },
         { 
             "race" : "sphinx",
             "attributes":{
-                "personality" : [""],
-                "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "personality" : ["wise:40", "noble:20", "stoic:20", "curious:10", "benevolent:10"],
+                "build": ["muscular:50", "thin:25", "strong:25"],
+                "size": ["tall:5","big:80", "huge:15"],
+                "ideology": ["progressist:50", "none:50"],
+                "ruling_type": ["none:100"]
             }
         },
         { 
             "race" : "orc",
             "attributes":{
+                "personality" : ["brave:20", "fearless:20", "aggressive:5", "loyal:10", "fierce:20", "reckless:15", "stupid:10"],
+                "build": ["muscular:50", "strong:35", "fat:15"],
+                "size": ["human-size:3","tall:65", "big:30", "huge:2"],
+                "ideology": ["tribalistic:50", "populist:25", "conservative:25"],
+                "ruling_type": ["monarchy:10", "gerontocratic:70", "authoritarian:20"]
+            }
+        },
+        { 
+            "race" : "human",
+            "attributes":{
                 "personality" : [""],
                 "build": [""],
-                "size": [""],
-                "ideology": [""]
+                "size": ["human-size:30000", "short:2", "tall:1"],
+                "ideology": [""],
+                "ruling_type": [""]
             }
         }
 
